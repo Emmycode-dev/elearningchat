@@ -3,13 +3,13 @@ var router =express.Router();
 
 const credential={
     matricnumber:"230100111004",
-    username:"kingsley",
+    surname:"kingsley",
 }
 
 //login user
 router.post('/login',(req,res)=>{
-    if(req.body.matricnumber==credential.matricnumber&&req.body.username==credential.username){
-        req.session.user=req.body.username;
+    if(req.body.matricnumber==credential.matricnumber&&req.body.surname==credential.surname){
+        req.session.user=req.body.surname;
         res.redirect('/route/dashboard');
         //res.end("Login Succesful...!");
     }else{
