@@ -2,8 +2,8 @@ var express = require("express");
 var router =express.Router();
 
 const credential={
-    matricnumber:"230100111004",
-    surname:"kingsley",
+    matricnumber:"23010231084",
+    surname:"sylvester",
 }
 
 //login user
